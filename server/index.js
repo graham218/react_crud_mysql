@@ -14,6 +14,18 @@ app.post('/create',(req, res)=>{
     const country=req.body.country;
     const position=req.body.position;
     const wage=req.body.wage;
+
+    db.query(
+        "INSERT INTO employees (name, age, country, positon, wage) VALUES (?,?,?,?,?)",
+        [name, age, country, positon, wage],
+        (err,result)=>{
+            if(err){
+                console.log(err);
+            }else{
+                res.send("Employee details inserted successfully into database");
+            }
+        }
+    );
 });
 
 app.listen(3001, ()=>{
