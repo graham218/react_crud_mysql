@@ -16,7 +16,9 @@ function App() {
       age:age,
       country:country,
       position:position,
-      wage:wage
+      wage:wage,
+    }).then(()=>{
+      console.log("Success");
     });
   }
   return (
