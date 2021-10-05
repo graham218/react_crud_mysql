@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div class="information">
+      <div className="information">
         <label>Name:</label>
         <input type="text"/>
         <label>Age:</label>
