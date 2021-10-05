@@ -12,15 +12,15 @@ function App() {
     <div className="App">
       <div className="information">
         <label>Name:</label>
-        <input type="text"/>
+        <input type="text" onChange={(event)=>{setName=event.target.value}}/>
         <label>Age:</label>
-        <input type="number"/>
+        <input type="number" onChange={(event)=>{setName=event.target.value}}/>
         <label>Country:</label>
-        <input type="text"/>
+        <input type="text" onChange={(event)=>{setName=event.target.value}}/>
         <label>Position:</label>
-        <input type="text"/>
+        <input type="text" onChange={(event)=>{setName=event.target.value}}/>
         <label>Wage (Year):</label>
-        <input type="number"/>
+        <input type="number" onChange={(event)=>{setName=event.target.value}}/>
         <button>Add Employee</button>
       </div>
     </div>
